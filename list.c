@@ -40,17 +40,16 @@ List * createList()
 
 void * firstList(List * list)
 {
-  void * head = list->head;
   list->current = list->head;
   
-  return head;
+  return list->head;
 }
 
 void * nextList(List * list)
 {
-
+  list->current = list->current->next;
   
-  return NULL;
+  return list->current;
 }
 
 void * lastList(List * list)
