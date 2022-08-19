@@ -2,3 +2,22 @@ Fri 19 Aug 2022 12:22:41 PM UTC:
  tests:  0|6
 total_score: 0/70
 1ecb695
+Fri 19 Aug 2022 12:36:45 PM UTC: 
+ list.c | 64 ++++++++++++++++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 50 insertions(+), 14 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:3: error: ‘list’ undeclared (first use in this function); did you mean ‘lista’?
+   34 |   list->head = NULL;
+      |   ^~~~
+      |   lista
+list.c:34:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c:38:10: error: incompatible types when returning type ‘List’ {aka ‘struct List’} but ‘List *’ {aka ‘struct List *’} was expected
+   38 |   return *lista;
+      |          ^~~~~~
+list.c:39:1: error: control reaches end of non-void function [-Werror=return-type]
+   39 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7e89b23

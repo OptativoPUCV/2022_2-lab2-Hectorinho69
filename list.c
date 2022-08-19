@@ -28,53 +28,89 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList() {
-     return NULL;
+List * createList()
+{
+  List *lista = (List *)malloc(sizeof(List));
+  list->head = NULL;
+  list->tail = NULL;
+  list->current = NULL;
+  
+  return *lista;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * list)
+{
+  
+  return NULL;
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * list)
+{
+
+  
+  return NULL;
 }
 
-void * lastList(List * list) {
-    return NULL;
+void * lastList(List * list)
+{
+
+  
+  return NULL;
 }
 
-void * prevList(List * list) {
-    return NULL;
+void * prevList(List * list)
+{
+
+  
+  return NULL;
 }
 
-void pushFront(List * list, void * data) {
+void pushFront(List * list, void * data)
+{
+  
 }
 
-void pushBack(List * list, void * data) {
-    list->current = list->tail;
-    pushCurrent(list,data);
+void pushBack(List * list, void * data)
+{
+  
+  
+  list->current = list->tail;
+  pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
+void pushCurrent(List * list, void * data)
+{
+  
 }
 
-void * popFront(List * list) {
-    list->current = list->head;
-    return popCurrent(list);
+void * popFront(List * list)
+{
+
+  
+  list->current = list->head;
+  return popCurrent(list);
 }
 
-void * popBack(List * list) {
-    list->current = list->tail;
-    return popCurrent(list);
+void * popBack(List * list)
+{
+  
+  
+  list->current = list->tail;
+  return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
-    return NULL;
+void * popCurrent(List * list) 
+{
+  
+  return NULL;
 }
 
-void cleanList(List * list) {
-    while (list->head != NULL) {
-        popFront(list);
-    }
+void cleanList(List * list)
+{
+  
+  
+  while (list->head != NULL)
+  {
+    popFront(list);
+  }
 }
