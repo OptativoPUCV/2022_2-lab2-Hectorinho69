@@ -84,14 +84,16 @@ void * prevList(List * list)
 
   if(list->current->prev)
     list->current = list->current->prev;
-  
-  
+    
   return (list->current->data);
 }
 
 void pushFront(List * list, void * data)
 {
-  
+  Node * nuevito = createNode(void * data);
+  nuevito->next = list->head;
+  list->head->prev = nuevito;
+  list->head = nuevito;
 }
 
 void pushBack(List * list, void * data)
