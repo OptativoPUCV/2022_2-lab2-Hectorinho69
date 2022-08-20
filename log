@@ -127,3 +127,15 @@ list.c:93:31: error: expected expression before ‘void’
       |                               ^~~~
 Compilation failed
 4a533d7
+Sat 20 Aug 2022 12:49:14 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:93:32: error: dereferencing ‘void *’ pointer [-Werror]
+   93 |   Node * nuevito = createNode( * data);
+      |                                ^~~~~~
+list.c:93:32: error: invalid use of void expression
+cc1: all warnings being treated as errors
+Compilation failed
+e6fc840
