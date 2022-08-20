@@ -114,6 +114,15 @@ void pushBack(List * list, void * data)
 
 void pushCurrent(List * list, void * data)
 {
+  Node * nodo = createNode(data);
+
+  Node * siguiente = list->current->next;
+
+  nodo->next = siguiente;
+  nodo->prev = list->current;
+  siguiente->prev
+  siguiente = nodo;
+  
   
 }
 

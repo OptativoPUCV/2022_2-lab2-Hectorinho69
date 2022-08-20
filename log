@@ -180,3 +180,20 @@ Sat 20 Aug 2022 12:54:01 AM UTC:
  tests:  10|2
 total_score: 45/70
 417deee
+Sat 20 Aug 2022 01:03:52 AM UTC: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:123:12: error: statement with no effect [-Werror=unused-value]
+  123 |   siguiente->prev
+      |   ~~~~~~~~~^~~~~~
+list.c:123:18: error: expected ‘;’ before ‘siguiente’
+  123 |   siguiente->prev
+      |                  ^
+      |                  ;
+  124 |   siguiente = nodo;
+      |   ~~~~~~~~~       
+cc1: all warnings being treated as errors
+Compilation failed
+4413910
