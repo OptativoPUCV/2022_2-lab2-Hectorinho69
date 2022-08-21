@@ -283,3 +283,14 @@ Sun 21 Aug 2022 09:05:23 PM UTC:
  tests:  10|2
 total_score: 45/70
 8d592a8
+Sun 21 Aug 2022 09:05:51 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:120:10: error: variable ‘siguiente’ set but not used [-Werror=unused-but-set-variable]
+  120 |   Node * siguiente = list->current->next;
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7420197

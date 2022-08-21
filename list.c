@@ -122,8 +122,7 @@ void pushCurrent(List * list, void * data)
   nodo->prev = list->current;
   if(list->current->next) //si current no es el ultimo
   {
-    nodo->next = siguiente;
-    siguiente->prev = nodo;
+    aux->next = nodo;
   }
   else//si es current es el tail
   {
