@@ -264,3 +264,16 @@ Sun 21 Aug 2022 09:01:44 PM UTC:
  tests:  10|2
 total_score: 45/70
 2349b4e
+Sun 21 Aug 2022 09:05:18 PM UTC: 
+ list.c | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:131:30: error: expected ‘;’ before ‘}’ token
+  131 |     aux->prev = list->current
+      |                              ^
+      |                              ;
+  132 |   }
+      |   ~                           
+Compilation failed
+359816a

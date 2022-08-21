@@ -127,18 +127,15 @@ void pushCurrent(List * list, void * data)
   }
   else//si es current es el tail
   {
-    
+    list->tail = nodo;
+    aux->prev = list->current
   }
   siguiente = nodo;
   if(list->current == list->head)
   {
     list->head->next = nodo;
   }
-  if(list->current == aux)
-  {
-    list->tail = nodo;
-    aux->next = nodo;
-  }
+  
   
   
 }
