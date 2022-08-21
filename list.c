@@ -166,8 +166,9 @@ void * popCurrent(List * list)
   }
   else //si es el primero
   {
-    list->tail = siguiente;
+    list->head = siguiente;
     siguiente->prev = NULL;
+    
   }
   
   
