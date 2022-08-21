@@ -117,7 +117,7 @@ void pushCurrent(List * list, void * data)
   Node * nodo = createNode(data);
   Node * aux = createNode(list->tail);
 
-  Node * siguiente = list->current->next;
+  //Node * siguiente = list->current->next;
 
   nodo->prev = list->current;
   if(list->current->next) //si current no es el ultimo
