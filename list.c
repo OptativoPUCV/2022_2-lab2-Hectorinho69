@@ -134,10 +134,7 @@ void pushCurrent(List * list, void * data)
   if(list->current == list->head)
   {
     list->head->next = nodo;
-  }
-  
-  
-  
+  } 
 }
 
 void * popFront(List * list)
@@ -158,8 +155,11 @@ void * popBack(List * list)
 
 void * popCurrent(List * list) 
 {
+  Node * eliminado = createNode(list->current->data);
+
   
-  return NULL;
+  
+  return (eliminado->data);
 }
 
 void cleanList(List * list)
