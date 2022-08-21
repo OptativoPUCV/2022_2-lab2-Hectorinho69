@@ -294,3 +294,14 @@ list.c:120:10: error: variable ‘siguiente’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 7420197
+Sun 21 Aug 2022 09:06:40 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:120:10: error: unused variable ‘siguiente’ [-Werror=unused-variable]
+  120 |   Node * siguiente = list->current->next;
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9ecc76b
