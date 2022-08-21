@@ -226,3 +226,18 @@ Sun 21 Aug 2022 08:58:21 PM UTC:
  tests:  10|2
 total_score: 45/70
 8498a81
+Sun 21 Aug 2022 08:59:52 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:118:27: error: ‘L’ undeclared (first use in this function)
+  118 |   Node * aux = createNode(L->tail);
+      |                           ^
+list.c:118:27: note: each undeclared identifier is reported only once for each function it appears in
+list.c:118:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+  118 |   Node * aux = createNode(L->tail);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+100c1c0
