@@ -119,8 +119,11 @@ void pushCurrent(List * list, void * data)
   Node * siguiente = list->current->next;
 
   nodo->prev = list->current;
-  nodo->next = siguiente;
-  siguiente->prev = nodo;
+  if(list->current->next)
+  {
+    nodo->next = siguiente;
+    siguiente->prev = nodo;
+  }
   siguiente = nodo;
   if(list->current == list->head)
   {
