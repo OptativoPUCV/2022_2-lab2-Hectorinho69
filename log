@@ -241,3 +241,14 @@ list.c:118:10: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 100c1c0
+Sun 21 Aug 2022 09:00:01 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:118:10: error: unused variable ‘aux’ [-Werror=unused-variable]
+  118 |   Node * aux = createNode(list->tail);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+9aaf83b
