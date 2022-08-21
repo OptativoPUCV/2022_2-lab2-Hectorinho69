@@ -164,12 +164,12 @@ void * popCurrent(List * list)
     siguiente->prev = current->prev;
     current->prev = siguiente;
   }
-  else //si es el primero
+  if(current->prev == NULL) //si es el primero
   {
     list->head = siguiente;
     siguiente->prev = NULL;
-    
   }
+  
   
   
   
