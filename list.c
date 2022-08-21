@@ -119,15 +119,23 @@ void pushCurrent(List * list, void * data)
   Node * siguiente = list->current->next;
 
   nodo->prev = list->current;
-  if(list->current->next)
+  if(list->current->next) //si current no es el ultimo
   {
     nodo->next = siguiente;
     siguiente->prev = nodo;
+  }
+  else//si es current es el tail
+  {
+    
   }
   siguiente = nodo;
   if(list->current == list->head)
   {
     list->head->next = nodo;
+  }
+  if(list->current == list->tail)
+  {
+    list->tail = nodo;
   }
   
   
