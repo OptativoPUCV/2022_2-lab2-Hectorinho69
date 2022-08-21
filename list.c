@@ -156,7 +156,15 @@ void * popBack(List * list)
 void * popCurrent(List * list) 
 {
   Node * eliminado = createNode(list->current->data);
+  Node * current = createNode(list->current);
+  Node * siguiente = createNode(list->current->next);
 
+  if(current->prev)//si hay anterior(no es el primero)
+  {
+    siguiente->prev = current->prev;
+    current->prev = siguiente;
+  }
+    
   
   
   return (eliminado->data);
